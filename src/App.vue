@@ -2,12 +2,13 @@
 <div>
   <h1>TO DO LIST</h1>
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li
+      v-for="(list, index) in lists"
+      :key="index"
+    >
+    {{ list.name }}
+    </li>
+    
   </ul>
 </div>
 </template>
@@ -18,7 +19,7 @@
     data() {
 
       return{
-        listToDo: []
+        lists: []
       };
     }, 
     mounted() {

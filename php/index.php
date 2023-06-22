@@ -5,7 +5,7 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 header('Content-Type: application/json');
 
-$listToDos = [
+$lists = [
     [
         'name' => 'HTML'
     ]
@@ -23,7 +23,8 @@ $listToDos = [
     ]
     [
         'name' => 'Laravel'
-    ]
-    
+    ]  
+    ];
 
-]
+    echo json_encode($lists);
+
