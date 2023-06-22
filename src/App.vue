@@ -25,8 +25,8 @@
     mounted() {
 
       axios.get('http://localhost/php-todo-list-json')
-           .then(r => {
-            console.log(JSON.stringify(r));
+           .then(response => {
+            this.lists = response.data; 
            })
     }
   }
