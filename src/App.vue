@@ -7,6 +7,12 @@
 <script>
   import axios from 'axios';
   export default {
+    data() {
+
+      return{
+        listToDo: []
+      };
+    }, 
     mounted() {
 
       axios.get('http://localhost/php-todo-list-json')
