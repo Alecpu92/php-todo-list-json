@@ -2,6 +2,7 @@
 <div>
   <h1>Hello World</h1>
 </div>
+</template>
 
 <script>
   import axios from 'axios';
@@ -15,4 +16,4 @@
     }
   }
 </script>
-</template>
+
