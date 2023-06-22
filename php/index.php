@@ -5,6 +5,25 @@ header("Access-Control-Allow-Headers: X-Requested-With");
 
 header('Content-Type: application/json');
 
-$listToDo = [
+$listToDos = [
+    [
+        'name' => 'HTML'
+    ]
+    [
+        'name' => 'CSS'
+    ]
+    [
+        'name' => 'Responsive design'
+    ]
+    [
+        'name' => 'Javascript'
+    ]
+    [
+        'name' => 'PHP'
+    ]
+    [
+        'name' => 'Laravel'
+    ]
+    
 
 ]
