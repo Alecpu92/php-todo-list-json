@@ -6,9 +6,14 @@
   :key="i"
   >
   {{ list.name }}
-
 </li>
 </ul>
+ <form @submit.prevent="onSubmit">
+   <label for="name">Name</label>
+   <input type="text" name="name" v-model="newList.name">
+   <br />
+   <input type="submit" value="Inserisci">
+ </form>
 </template>
 
 <script>
@@ -18,8 +23,23 @@ export default {
   data() {
 
     return {
-      lists: []
+      lists: [],
+
+      newList: {
+        name: "",
+      }
     };
+  },
+  methods: {
+
+    onSubmit() {
+
+      const url = 'http://loalhost/tmp/php/newList.php'
+      const data = this.newList;
+
+      axios.post( )
+    }
+
   },
   mounted() {
     
