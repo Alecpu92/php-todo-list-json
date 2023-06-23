@@ -34,10 +34,20 @@ export default {
 
     onSubmit() {
 
-      const url = 'http://loalhost/tmp/php/newList.php'
+      const url = 'http://loalhost/tmp/php/newList.php';
       const data = this.newList;
+      const headers = {
+        headers: { 'Content-Type' : 'multipart/form-data'}
 
-      axios.post( )
+      };
+
+      axios.post( url, data, headers)
+           .then(res => {
+
+            const data = res.data;
+            console.log("data" , data); 
+
+           })
     }
 
   },
