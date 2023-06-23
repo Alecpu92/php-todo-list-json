@@ -34,7 +34,7 @@ export default {
 
     onSubmit() {
 
-      const url = 'http://loalhost/tmp/php/newList.php';
+      const url = 'http://localhost/tmp/php/newList.php';
       const data = this.newList;
       const headers = {
         headers: { 'Content-Type' : 'multipart/form-data'}
@@ -53,7 +53,7 @@ export default {
   },
   mounted() {
     
-    axios.get("http://loalhost/tmp/php/index.php")
+    axios.get("http://localhost/tmp/php/index.php")
     .then(res => {
 
       const data = res.data;
